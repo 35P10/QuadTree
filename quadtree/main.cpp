@@ -37,7 +37,7 @@ int main(int argc, char** argv)
         A.insertar(rand() % 1000 + 1, rand() % 1000 + 1, rand() % 1000 + 1);
     }
     //consulta de rango
-    A.consulta_rango(punto(590, 400), punto(1000, 1000));
+    //A.consulta_rango(punto(590, 400), punto(1000, 1000));
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);

@@ -93,7 +93,7 @@ std::vector<nodo*> quadtree::consulta_rango(punto abajo_izquierda, punto arriba_
 void quadtree::print()
 {
     root->print_Nodo();
-    sector_consulta->draw_just_this(0, 250, 250);
+    if(sector_consulta) sector_consulta->draw_just_this(0, 250, 250);
 }
 
 
