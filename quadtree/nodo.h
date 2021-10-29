@@ -19,7 +19,7 @@ private:
     bool     is_select = false; //solo es para identificar de que color pintar un punto
                             //en caso de ser seleccionado en un range query
 public:
-    nodo* get_hijo(int x);
+    nodo*   get_hijo(int x);
     void    set_hijo(int x, nodo* new_hijo);
     void    set_hijos_NULL();
     nodo();

@@ -108,6 +108,9 @@ bool nodo::is_in_range(punto _abajo_izquierda, punto _arriba_derecha)
 	if (status == 1) {
 		//comprobar si algun nodo esta en el rango
 		//contiene todo el cuadrado
+		if (abajo_izquierda.x <= _abajo_izquierda.x && abajo_izquierda.y <= _abajo_izquierda.y
+			&& _arriba_derecha.x <= arriba_derecha.x && _arriba_derecha.y <= arriba_derecha.y)
+			return true;
 		//nodo izquierda abajo
 		if (_abajo_izquierda.x <= abajo_izquierda.x && _abajo_izquierda.y <= abajo_izquierda.y
 			&& abajo_izquierda.x <= _arriba_derecha.x && abajo_izquierda.y <= _arriba_derecha.y)

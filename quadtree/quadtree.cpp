@@ -24,9 +24,7 @@ void quadtree::insertar(int x, int y, int data) {
 
     */
     //hallar al sector al que pertenece 
-    int h = iterator->get_height_mid();
-    int w = iterator->get_width_mid();
-    int final_sector;
+    int final_sector=0;
 
     while (iterator) {
         iterator_padre = iterator;
@@ -65,7 +63,6 @@ void quadtree::insertar(int x, int y, int data) {
 
 }
 
-
 std::vector<nodo*> quadtree::get_query_list()
 {
     return query_list;
@@ -85,10 +82,9 @@ std::vector<nodo*> quadtree::consulta_rango(punto abajo_izquierda, punto arriba_
     sector_consulta->update_status(1);
 
     root->query_in_range(query_list, abajo_izquierda, arriba_derecha);
-
+    std::cout << "puntos encontrados: " << query_list.size();
     return query_list;
 }
-
 
 void quadtree::print()
 {

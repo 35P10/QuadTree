@@ -33,11 +33,11 @@ int main(int argc, char** argv)
 {
     //insertar 100 nodos aleatoriamente
     srand(time(NULL));
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
         A.insertar(rand() % 1000 + 1, rand() % 1000 + 1, rand() % 1000 + 1);
     }
     //consulta de rango
-    //A.consulta_rango(punto(590, 400), punto(1000, 1000));
+    A.consulta_rango(punto(250, 250), punto(750, 750));
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
